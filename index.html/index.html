@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Homepage</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+header {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+section, aside {
+  background: white;
+  padding: 20px;
+  margin: 5px;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  background: navy;
+  color: white;
+  padding: 10px;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media(max-width:600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ABC Engineering College</h1>
+  <p>Knowledge is Power</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Courses</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<section>
+  <h2>Welcome to Our College</h2>
+  <p>Our college provides quality education
+  and excellent facilities for students.</p>
+
+  <h3>Courses Offered</h3>
+
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Duration</th>
+    </tr>
+    <tr>
+      <td>CSE</td>
+      <td>4 Years</td>
+    </tr>
+    <tr>
+      <td>ECE</td>
+      <td>4 Years</td>
+    </tr>
+    <tr>
+      <td>IT</td>
+      <td>4 Years</td>
+    </tr>
+  </table>
+</section>
+
+<aside>
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</aside>
+
+</div>
+
+<footer>
+  <p>© 2026 ABC Engineering College</p>
+</footer>
+
+</body>
+</html>
